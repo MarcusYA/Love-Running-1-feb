@@ -52,8 +52,30 @@ h1,h2 {
 
 /* hero image*/
 
+#main-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
 #mainimage {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center;
+
+    /* animates zoom for */
+    animation-name: main-zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates zoom for mainpicture*/
+
+@keyframes main-zoom {
+    form{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
